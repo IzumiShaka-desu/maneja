@@ -1,0 +1,1 @@
+enum TypeTx { debit, credit }
