@@ -116,12 +116,11 @@ class MainViewmodel extends GetxController {
                             description: creditDescription.value ?? " "),
                         TypeTx.credit,
                       );
-                      if(!result['error']){
+                      if (!result['error']) {
                         Get.back();
                       }
                       Get.snackbar('notification', result['message']);
                       loadData();
-                     
                     }
                   },
                   label: Text(
@@ -148,6 +147,7 @@ class MainViewmodel extends GetxController {
       ),
     );
   }
+
   addDebitTransaction() async {
     Get.bottomSheet(
       Container(
@@ -207,8 +207,8 @@ class MainViewmodel extends GetxController {
                             description: creditDescription.value ?? " "),
                         TypeTx.debit,
                       );
-                      
-                      if(!result['error']){
+
+                      if (!result['error']) {
                         Get.back();
                       }
                       Get.snackbar('notification', result['message']);
